@@ -35,17 +35,17 @@ public class stories extends AppCompatActivity implements Html.ImageGetter {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //
-        TextView text5 = (TextView) findViewById(R.id.textView5);
+        //TextView text5 = (TextView) findViewById(R.id.textView5);
 
-        String source = "this is a test of <b>ImageGetter</b> it contains " +
+        /*String source = "this is a test of <b>ImageGetter</b> it contains " +
                 "two images: <br/>" +
                 "<img src=\"http://developer.android.com/assets/images/dac_logo.png\"><br/>and<br/>" +
-                "<img src=\"http://developer.android.com/assets/images/icon_search.png\">";
+                "<img src=\"http://developer.android.com/assets/images/icon_search.png\">";*/
 
-        Spanned spanned = (Spanned) Html.fromHtml(source, this, null);
+        //Spanned spanned = (Spanned) Html.fromHtml(source, this, null);
         //mTv = (TextView) findViewById(R.id.text);
-        text5.setText(spanned);
-        text5.refreshDrawableState();
+        //text5.setText(spanned);
+        //text5.refreshDrawableState();
 
 
     }

@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.aa.taseen.sdpdemo1.Helper.DatabaseHelper;
 import com.aa.taseen.sdpdemo1.R;
+import com.aa.taseen.sdpdemo1.Test2Activity;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
@@ -215,7 +216,8 @@ public class MainActivity extends AppCompatActivity
             Intent i = new Intent(MainActivity.this, BloodFinder.class);
             startActivity(i);
         } else if (id == R.id.nav_contact) {
-
+            Intent i = new Intent(MainActivity.this, Test2Activity.class);
+            startActivity(i);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
