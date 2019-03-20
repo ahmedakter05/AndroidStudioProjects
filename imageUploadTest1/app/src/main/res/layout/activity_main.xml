@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="396dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        tools:srcCompat="@tools:sample/avatars[10]" />
+
+    <EditText
+        android:id="@+id/editText_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="96dp"
+        android:ems="14"
+        android:inputType="textPersonName"
+        android:hint="Title"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_add_photo"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Add Photo" />
+
+    <Button
+        android:id="@+id/btn_save_photo"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@+id/btn_add_photo"
+        android:text="Save Photo" />
+
+    <TextView
+        android:id="@+id/textView_fileinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_view_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:text="File Info"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_view_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_save_photo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="120dp"
+        android:text="View Image" />
+
+</RelativeLayout>

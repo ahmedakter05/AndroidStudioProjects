@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorbracprimary">#EC008C</color>
+    <color name="colorbracdark">#D81B60</color>
+    <color name="colorbracprimt">#F033A3</color>
+    <color name="colorbracnavdesc">#19E91E63</color>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="com.example.taseen.sqllitepracaa.MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/idName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:hint="NAME" />
+
+    <EditText
+        android:id="@+id/idSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idName"
+        android:layout_marginTop="10dp"
+        android:hint="SURNAME" />
+
+    <EditText
+        android:id="@+id/idMarks"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idSurname"
+        android:layout_marginTop="10dp"
+        android:hint="Marks" />
+
+    <Button
+        android:id="@+id/idBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idMarks"
+        android:layout_marginTop="10dp"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/idRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Read DB" />
+
+    <TextView
+        android:id="@+id/idResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idRead"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/hint_enter_note"
+        android:text="TextView" />
+</RelativeLayout>

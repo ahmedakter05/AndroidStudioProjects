@@ -1,0 +1,7 @@
+sqlLiteCrudTest1
+navDrawDef - high class navigation srawer
+Fragtest - simple frag test
+andro1 - print name + sum
+andro2 - Print name
+andro3 - webview
+andro4 - taseen pic with activity & fragment

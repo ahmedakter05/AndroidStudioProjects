@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Planetica</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="slideshow">SlideShow</string>
+    <string name="tools">Tools</string>
+</resources>

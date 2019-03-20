@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "390797980428",
+    "firebase_url": "https://sdp-dwqa.firebaseio.com",
+    "project_id": "sdp-dwqa",
+    "storage_bucket": "sdp-dwqa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390797980428:android:007af0a39a84cd9f",
+        "android_client_info": {
+          "package_name": "com.aa.taseen.sdpdemo1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390797980428-rfmiq8gm8psf15a61ha2h2jn5t2hrh88.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aa.taseen.sdpdemo1",
+            "certificate_hash": "1693174c9dc7f18628e967860efe1250df8135ce"
+          }
+        },
+        {
+          "client_id": "390797980428-iekipb557ag7mn3fi4d8c9alsi3lta35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQbGg-HThRRvrdMpDnXzOpNqqqngXzNEs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390797980428-iekipb557ag7mn3fi4d8c9alsi3lta35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

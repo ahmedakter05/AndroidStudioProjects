@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ahmed Akter</string>
+    <string name="editTextinp1">Input here ...</string>
+    <string name="buttonclick1">Click -></string>
+    <string name="viewTextprint1">Print here !!!</string>
+
+
+    <string name="editTextn1">1</string>
+    <string name="viewTextsign1">+ (Plus)</string>
+    <string name="editTextn2">2</string>
+    <string name="buttonSum1">Calculate</string>
+    <string name="viewTextsum1">Sum = 3</string>
+
+
+
+</resources>
