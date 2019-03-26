@@ -1,3 +1,36 @@
 <resources>
-    <string name="app_name">RecyclerViewDemo1</string>
+    <string name="app_name">RecyclerViewDemo</string>
+
+    <string-array name="country_name">
+        <item>Aland Island</item>
+        <item>Angola</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Bangladesh</item>
+        <item>Belgium</item>
+        <item>Canada</item>
+        <item>China</item>
+        <item>Greece</item>
+        <item>Panama</item>
+        <item>Slovenia</item>
+        <item>Brazil</item>
+    </string-array>
+
+    <string-array name="country_desc">
+        <item>Aland Island is a beautiful country</item>
+        <item>Angola is a beautiful country</item>
+        <item>Armenia is a beautiful country</item>
+        <item>Australia is a beautiful country</item>
+        <item>Austria is a beautiful country</item>
+        <item>Bangladesh is a beautiful country</item>
+        <item>Belgium is a beautiful country</item>
+        <item>Canada is a beautiful country</item>
+        <item>China is a beautiful country</item>
+        <item>Greece is a beautiful country</item>
+        <item>Panama is a beautiful country</item>
+        <item>Slovenia is a beautiful country</item>
+        <item>Brazil is a beautiful country</item>
+    </string-array>
+
 </resources>
