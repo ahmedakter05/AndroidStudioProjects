@@ -51,8 +51,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView titleTextView, descTextView;
-        ImageView flagImageView;
+        private TextView titleTextView, descTextView;
+        private ImageView flagImageView;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
