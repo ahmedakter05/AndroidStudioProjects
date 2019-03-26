@@ -16,6 +16,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     private String[] title, desc;
     private int[] images;
 
+    private static ClickListener clickListener;
+
     public MyAdapter(Context context, String[] title, String[] desc, int[] images) {
         this.context = context;
         this.title = title;
@@ -45,11 +47,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public int getItemCount() {
         int len = title.length;
-        Toast.makeText(context, "Total: " + len, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(context, "Total: " + len, Toast.LENGTH_SHORT).show();
         return len;
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder{
+    class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
 
         private TextView titleTextView, descTextView;
         private ImageView flagImageView;
@@ -60,6 +62,31 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             titleTextView = itemView.findViewById(R.id.textViewTitleId);
             descTextView = itemView.findViewById(R.id.textViewDescId);
             flagImageView = itemView.findViewById(R.id.imageViewId);
+
+            //onclicklistener attachment
+            itemView.setOnClickListener(this);
+            itemView.setOnLongClickListener(this);
         }
+
+        @Override
+        public void onClick(View v) {
+            clickListener.onItemClick(getAdapterPosition(), v);
+        }
+
+        @Override
+        public boolean onLongClick(View v) {
+            clickListener.onItemLongClick(getAdapterPosition(), v);
+            return true;
+        }
+    }
+
+    public interface ClickListener {
+        void onItemClick(int position, View view);
+        void onItemLongClick(int position, View view);
+    }
+
+    public void setOnItemClickListener(ClickListener clickListener){
+        MyAdapter.clickListener = clickListener;
+
     }
 }
