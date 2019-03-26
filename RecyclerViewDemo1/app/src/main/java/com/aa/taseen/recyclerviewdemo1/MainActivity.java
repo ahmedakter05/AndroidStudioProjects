@@ -2,7 +2,9 @@ package com.aa.taseen.recyclerviewdemo1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     int[] images = {R.drawable.alandislands, R.drawable.angola, R.drawable.armenia,
             R.drawable.australia, R.drawable.austria,R.drawable.bangladesh,
             R.drawable.belgium, R.drawable.canada, R.drawable.china,
-            R.drawable.greece, R.drawable.panama, R.drawable.slovenia};
+            R.drawable.greece, R.drawable.panama, R.drawable.slovenia, R.drawable.brazil};
 
     String[] title, desc;
 
@@ -28,9 +30,8 @@ public class MainActivity extends AppCompatActivity {
         desc = getResources().getStringArray(R.array.country_desc);
 
         myAdapter = new MyAdapter(this, title, desc, images);
-
-
-
+        recyclerView.setAdapter(myAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
     }
 }
