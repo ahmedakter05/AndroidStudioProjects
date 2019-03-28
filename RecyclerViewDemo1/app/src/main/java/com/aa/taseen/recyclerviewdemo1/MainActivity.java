@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = findViewById(R.id.recyclerViewFID);
+        recyclerView = findViewById(R.id.recyclerViewID);
 
         title = getResources().getStringArray(R.array.country_name);
         desc = getResources().getStringArray(R.array.country_desc);
