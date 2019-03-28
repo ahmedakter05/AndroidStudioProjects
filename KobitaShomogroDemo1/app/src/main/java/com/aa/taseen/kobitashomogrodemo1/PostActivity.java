@@ -1,10 +1,9 @@
-package com.aa.taseen.recyclerviewdemo1;
+package com.aa.taseen.kobitashomogrodemo1;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -16,7 +15,6 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -121,8 +119,8 @@ public class PostActivity extends AppCompatActivity {
 
                         Toast.makeText(PostActivity.this, "Upload Success final", Toast.LENGTH_SHORT).show();
 
-                        Intent intent = new Intent(PostActivity.this, Main2Activity.class);
-                        startActivity(intent);
+                        Intent intentback = new Intent(PostActivity.this, MainActivity.class);
+                        startActivity(intentback);
                     } else {
                         Toast.makeText(PostActivity.this, "Failed, Try Again ...", Toast.LENGTH_SHORT).show();
                         finish();

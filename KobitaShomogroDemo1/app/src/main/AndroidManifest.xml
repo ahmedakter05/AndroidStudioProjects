@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aa.taseen.kobitashomogrodemo1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/iauditor_new_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/andro1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PostActivity"></activity>
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
